@@ -16,7 +16,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col `}
     >
-      <TypingText title="|About Meta" textStyles="text-center" />
+      <TypingText title="| About Meta" textStyles="text-center" />
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
@@ -28,7 +28,7 @@ const About = () => (
         I am a Frontend Web Developer based in the Philippines. I am passionate about creating beautiful and functional web applications. I am an IT Graduate and I am always looking for new challenges to learn new technologies. Im a Resourceful Front End Web Developer bringing in-depth knowledge of latest technology trends to produce clean website design. Detail-oriented collaboration with others to define project expectations and demand. Hands-on testing and debugging to address inconsistencies and maintain performance thresholds.
       </motion.p>
       <motion.img
-        variants={fadeIn('u', 'tween', 0.4, 1)}
+        variants={fadeIn('up', 'tween', 0.4, 1)}
         src="/arrow-down.svg"
         alt="arrow-down"
         className="w-[18px] h-[28px] object-contain mt-[28px]"
