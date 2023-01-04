@@ -35,7 +35,6 @@ const About = () => (
       />
     </motion.div>
 
-    About section
   </section>
 );
 
