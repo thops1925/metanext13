@@ -5,7 +5,6 @@ import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 import { socials } from '../constants';
 
-
 const Footer = () => (
   <motion.footer
     variants={footerVariants}
@@ -28,8 +27,13 @@ const Footer = () => (
         <div className="flex items-center justify-between flex-wrap gap-4">
           <h4 className="font-extrabold text-[24px] text-white ">MetaTest</h4>
           <p className="font-normal text-[14px] text-white opacity-50">
-            &copy; copyright {new Date().getFullYear()}
+            Copyright &copy;  {new Date().getFullYear()} All rights reserved.
           </p>
+          <div className="flex gap-4">
+            {socials.map((item) => (
+              <img src={item.url} alt={item.name} key={item.name} className="w-[24px] h-[24px] object-contain cursor-pointer" />
+            ))}
+          </div>
         </div>
       </div>
     </div>
